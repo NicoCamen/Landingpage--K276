@@ -213,6 +213,10 @@ main {
   min-height: 75vh;
 }
 
+article {
+  padding-bottom: 5vh;
+}
+
 video {
   max-width: 86vw;
 }
@@ -226,10 +230,10 @@ video {
   display: flex;
   gap: 5vw;
   max-width: 86vw;
-  padding-top:  5vh;
+  padding-top: 5vh;
 }
 
-#poster img{
+#poster img {
   width: 50vw;
 }
 
@@ -246,7 +250,6 @@ video {
   display: flex;
   flex-direction: column;
   padding-bottom: 10vh;
-  padding-top: 5vh;
 }
 
 .podcast-prev audio {
@@ -254,7 +257,7 @@ video {
   height: auto +5%;
 }
 
-img.portrait{
+img.portrait {
   width: 20vw;
   height: 20vw;
   padding-bottom: 10px;
@@ -273,29 +276,40 @@ article.team{
   padding: 5px;
 } */
 
-article.text-picture div figure{
-display: flex;
-gap: 2vw;
+article.text-picture div figure {
+  display: flex;
+  gap: 2vw;
 }
 
-article.text-picture div img{
+article.text-picture div img {
   max-width: 35vw;
-  }
+}
 
 
-  figure.persona{
-    background-color: white;
-  }
+figure.persona {
+  background-color: white;
+}
 
-  .team-container{
-    display: flex;
-    justify-content: center;
-    padding: 5vh 5vw;
-  }
-  
-  article.team{
-    padding: 5px;
-  }
+.team-container {
+  display: flex;
+  justify-content: center;
+  padding: 5vh 5vw;
+}
+
+article.team {
+  padding: 5px;
+}
+
+#more a {
+  font-family: 'SRGSSR_Display';
+  font-size: 32px;
+  font-weight: 400;
+  color: black;
+}
+
+#more svg {
+  size: 50vh;
+}
 
 
 
@@ -327,7 +341,7 @@ footer p {
 
 /* mobile */
 @media screen and (max-width:750px) {
-footer p {
-  font-size: 15px;
-}
+  footer p {
+    font-size: 15px;
+  }
 }
