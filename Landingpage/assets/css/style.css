@@ -178,12 +178,14 @@ h1 {
   font-family: 'SRGSSR_Display';
   font-size: 96px;
   font-weight: 700;
+  padding-bottom: 1vh;
 }
 
 h2 {
   font-family: 'SRGSSR_Display';
   font-size: 64px;
   font-weight: 700;
+  padding-bottom: 2vh;
 }
 
 h3 {
@@ -312,7 +314,12 @@ article.team {
   size: 50vh;
 }
 
-
+.start div {
+  background-color: var(--withe);
+  padding: 3vw;
+  display: flex;
+  flex-direction: column;
+}
 
 /**---------------**/
 /** mobile styles **/
