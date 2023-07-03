@@ -64,7 +64,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 24px;
+  padding: 3vh 2vw;
 }
 
 .nav-menu {
@@ -75,7 +75,7 @@ a {
 }
 
 .nav-branding img {
-  width: 25vw;
+  width: 15vw;
 }
 
 .nav-link {
