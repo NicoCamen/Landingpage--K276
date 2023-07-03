@@ -55,7 +55,7 @@ a {
 }
 
 .nav-on {
-  color: var(--orange);
+  color: var(--pink);
   text-decoration: underline;
 }
 
@@ -83,8 +83,8 @@ a {
 }
 
 .nav-link:hover {
-  color: var(--orange);
-  font-size: 45px;
+  color: var(--pink);
+  font-size: 40px;
 }
 
 .hamburger {
@@ -154,11 +154,6 @@ a {
     font-size: 15px;
     font-weight: 500;
   }
-
-  .nav-link:hover {
-    color: var(--orange);
-    font-size: 18px;
-  }
 }
 
 
@@ -210,16 +205,18 @@ footer {
   justify-content: center;
   text-align: center;
   background-color: var(--gray);
-  padding: 2%;
+  padding: 1%;
 }
 
 footer p {
   color: var(--withe);
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'SRGSSR_Display';
 }
 
 /* mobile */
+@media screen and (max-width:750px) {
 footer p {
-  font-size: 20px;
+  font-size: 15px;
+}
 }
