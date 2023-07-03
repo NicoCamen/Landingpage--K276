@@ -168,6 +168,37 @@ p {
   line-height: 24px;
 }
 
+h1 {
+  font-family: 'SRGSSR_Display';
+  font-size: 96px;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: 'SRGSSR_Display';
+  font-size: 64px;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: 'SRGSSR_Display';
+  font-size: 46px;
+  font-weight: 400;
+}
+
+button {
+  background-color: var(--gray);
+  padding: 1%;
+  border: var(--withe) 1px solid;
+  font-family: 'SRGSSR_Display';
+  font-size: 36px;
+  font-weight: 400;
+  box-shadow: 0px;
+}
+
+button:hover {
+  box-shadow: 0px 0px 15px var(--gray);
+}
 
 main {
   display: flex;
@@ -188,6 +219,7 @@ video {
   display: flex;
   gap: 5vw;
   max-width: 86vw;
+  padding-top:  3vw;
 }
 
 #poster img{
