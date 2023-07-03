@@ -1,0 +1,205 @@
+/** CSS resets **/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'SRGSSR_Display';
+  src: url('../font/SRGSSR_Display.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SRGSSR_Text';
+  src: url('../font/SRGSSR_Text.ttf') format('truetype');
+}
+
+/* Roots */
+:root {
+  --red: #af001d;
+  --pink: #ff259b;
+  --orange: #ff531b;
+  --gray: #333333;
+  --withe: #FFFFFF;
+}
+
+/* Basics */
+html,
+body {
+  background: linear-gradient(45deg, rgba(255, 83, 27, 1) 0%, rgba(255, 37, 155, 1) 100%);
+  background-repeat: no-repeat;
+  scroll-behavior: smooth;
+  font-family: 'SRGSSR_Display';
+}
+
+
+/**--------**/
+/** header **/
+/**--------**/
+
+/* desktop */
+header {
+  background-color: var(--gray)
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.nav-on {
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-branding img {
+  width: 25vw;
+}
+
+.nav-link {
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--orange);
+  font-size: 45px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+
+/* mobile */
+/* Burger icon */
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--withe);
+}
+
+@media screen and (max-width:750px) {
+  header {
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--gray);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .nav-link:hover {
+    color: var(--orange);
+    font-size: 18px;
+  }
+}
+
+
+
+/**---------------**/
+/** mobile styles **/
+/**---------------**/
+
+
+
+
+/**----------------**/
+/** desktop styles **/
+/**----------------**/
+
+main {
+  display: flex;
+  height: 90vh;
+}
+
+
+/**--------**/
+/** Footer **/
+/**--------**/
+
+/* desktop */
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--gray);
+  padding: 2%;
+}
+
+footer p {
+  color: var(--withe);
+  font-size: 40px;
+  font-family: 'SRGSSR_Display';
+}
+
+/* mobile */
+footer p {
+  font-size: 20px;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- embed stylesheet -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- include font-family Encode Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- include feather-icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/Favicon.jpg">
+
+    <title>Kontakt</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Logo mit link zu home -->
+            <a href="index.html" class="nav-branding"><img src="assets/img/Logo.jpg" alt="Logo"></a>
+
+            <!-- Navigationspunkte -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Menü</a>
+                </li>
+                <li class="nav-item">
+                    <a href="über_uns.html" class="nav-link">Über uns</a>
+                </li>
+                <li class="nav-item">
+                    <a href="kontakt.html" class="nav-on">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#impressum" class="nav-link">Impressum</a>
+                </li>
+            </ul>
+
+            <!-- Burger/X Icon -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+
+        <!-- Standort -->
+        <section class="standort">
+
+            <h1>Unser Standort</h1>
+
+            <!-- Google maps Karte (random Chicken Restaurant) -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21615.73647117858!2d8.4980321!3d47.3735614!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a18b268944d%3A0x90e0f0b53d636c27!2sYardbird%20Southern%20Fried%20Chicken!5e0!3m2!1sde!2sch!4v1666793916874!5m2!1sde!2sch"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+        </section>
+
+        <!-- Kontaktdaten -->
+        <section class="kontakt">
+            <!-- E-mail Adresse -->
+            <div class="e-mail">
+                <i data-feather="mail" class="icon"></i>
+                <p>E-mail:</p>
+                <h3>nicosnuggets.info@nugget.ch</h3>
+            </div>
+
+            <!-- Telefonnummer -->
+            <div class="phone">
+                <i data-feather="phone" class="icon"></i>
+                <p>Telefon:</p>
+                <h3>+41 79 654 32 10</h3>
+            </div>
+        </section>
+
+        <section class="kontaktier_uns">
+
+            <h1>Kontaktieren sie uns</h1>
+
+            <!-- Kontaktformular -->
+            <div class="kontaktformular">
+
+                <!-- Name -->
+                <div id="f-names">
+                    <label for="a_textfeld" id="name">Name:</label>
+                    <input id="a_textfeld" type="text" placeholder="Nico Camenzind"><br>
+                </div>
+
+                <!-- E-mail -->
+                <div id="f-email">
+                    <label for="b_textfeld" id="email">Email:</label>
+                    <input id="b_textfeld" type="email" placeholder="nicocam@gmx.ch"><br>
+                </div>
+
+                <!-- Telefonnummer -->
+                <div id="f-telefon">
+                    <label for="c_textfeld" id="telefon">Telefon:</label>
+                    <input id="c_textfeld" type="tel" placeholder="076 720 86 02"><br>
+                </div>
+
+                <!-- Nachricht -->
+                <label for="d_textfeld" id="nachricht">Ihre Nachricht:</label>
+                <textarea name="Nachricht" id="d_textfeld" cols="30" rows="10" placeholder="Hallo ich bin Nico..."></textarea>
+
+                <!-- Senden Button -->
+                <div id="senden_submit">
+                    <input type="submit" id="submit" value="senden"/>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer_top">
+            <!-- Logo -->
+            <a class="logo" href="index.html"><img src="assets/img/Logo.jpg" alt="Logo"></a>
+
+            <!-- Social Media Icons -->
+            <div class="social_m">
+                <a href="#" class="footer_icons"><i data-feather="facebook"></i></a>
+                <a href="#" class="footer_icons"><i data-feather="twitter"></i></a>
+                <a href="#" class="footer_icons"><i data-feather="instagram"></i></a>
+                <a href="#" class="footer_icons"><i data-feather="youtube"></i></a>
+            </div>
+        </div>
+
+        <h3 id="impressum">Impressum</h3>
+        <div class="footer_bottom">
+            <!-- Impressum -->
+
+            <!-- Quellen -->
+            <p>Werbevideo Quelle: https://www.vecteezy.com/ Creator: wattanaphop<br>
+                Fisch Nuggets Bild Quelle: unsplash.com Creator: Paras Kapoor<br>
+                Hot Nuggets Bild Quelle: unsplash.com Creator: Ke Vin<br>
+                Nicos Nuggets Bild Quelle: unsplash.com Creator: Brett Jordan<br>
+                Veggie Nuggets Bild Quelle: unsplash.com Creator: Léo Roza<br>
+                Personenbilder Quelle: https://thispersondoesnotexist.com/<br>
+                Restaurant bei Eröffnung Bild: unsplas.com<br>
+            </p>
+            <!-- Adresse -->
+            <address>Nico Camenzind,<br> Hagenbuchenweg 20,<br> 8602 Wangen b. Dübendorf</address>
+        </div>
+    </footer>
+
+    <!-- embed JavaScript -->
+    <script src="assets/script.js"></script>
+
+    <!-- replace i-tags with icons (feather) -->
+    <script>
+        feather.replace()
+    </script>
+</body>
+
+</html>
