@@ -210,6 +210,7 @@ main {
   display: flex;
   justify-content: center;
   padding: 0vh 10vw;
+  min-height: 75vh;
 }
 
 video {
@@ -260,15 +261,17 @@ img.portrait{
   object-fit: cover;
 }
 
-.team-container{
-  display: flex;
+/* .team-container{
+  display: grid;
+  grid-template-columns: repeat(2, 30vw);
+  grid-template-rows: repeat(2, auto);
   justify-content: center;
   padding: 5vh 5vw;
 }
 
 article.team{
   padding: 5px;
-}
+} */
 
 article.text-picture div figure{
 display: flex;
@@ -283,6 +286,18 @@ article.text-picture div img{
   figure.persona{
     background-color: white;
   }
+
+  .team-container{
+    display: flex;
+    justify-content: center;
+    padding: 5vh 5vw;
+  }
+  
+  article.team{
+    padding: 5px;
+  }
+
+
 
 /**---------------**/
 /** mobile styles **/
