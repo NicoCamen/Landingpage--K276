@@ -263,6 +263,11 @@ article.text-picture div img{
   max-width: 35vw;
   }
 
+
+  figure.persona{
+    background-color: white;
+  }
+
 /**---------------**/
 /** mobile styles **/
 /**---------------**/
