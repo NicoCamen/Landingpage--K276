@@ -27,7 +27,7 @@
 /* Basics */
 html,
 body {
-  background: linear-gradient(135deg, rgba(255, 83, 27, 1) 10%, rgba(255, 37, 155, 1) 50%, rgba(175, 0, 29, 1) 90%);
+  background: linear-gradient(305deg, rgba(255, 83, 27, 1) 10%, rgba(255, 37, 155, 1) 50%, rgba(175, 0, 29, 1) 90%);
   background-repeat: no-repeat;
   scroll-behavior: smooth;
   font-family: 'SRGSSR_Display';
@@ -64,7 +64,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 24px;
+  padding: 3vh 2vw;
 }
 
 .nav-menu {
@@ -75,7 +75,7 @@ a {
 }
 
 .nav-branding img {
-  width: 25vw;
+  width: 15vw;
 }
 
 .nav-link {
