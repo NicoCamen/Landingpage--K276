@@ -279,6 +279,7 @@ article.team{
 article.text-picture div figure {
   display: flex;
   gap: 2vw;
+  padding-bottom: 5vh;
 }
 
 article.text-picture div img {
