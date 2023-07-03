@@ -254,7 +254,7 @@ article.team{
   padding: 5px;
 }
 
-article.text-picture div div{
+article.text-picture div figure{
 display: flex;
 gap: 2vw;
 }
