@@ -220,6 +220,14 @@ article.team{
   padding: 5px;
 }
 
+article.text-picture div div{
+display: flex;
+gap: 2vw;
+}
+
+article.text-picture div img{
+  max-width: 35vw;
+  }
 
 /**---------------**/
 /** mobile styles **/
