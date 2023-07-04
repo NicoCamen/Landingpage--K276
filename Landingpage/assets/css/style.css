@@ -297,13 +297,13 @@ article.text-picture div figure {
 
 figure.persona{
   padding-bottom: 0 !important;
-  margin-bottom: 5vh;xw
+  margin-bottom: 5vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.SWOT figure{
+.swot figure{
   background-color: #FFFFFF;
   max-width: 40vw;
   display: flex;
