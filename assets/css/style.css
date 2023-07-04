@@ -36,8 +36,15 @@ body {
 main {
   display: flex;
   justify-content: center;
-  padding: 0vh 10vw;
+  padding: 10vh 10vw;
   min-height: 75vh;
+  flex-direction: column;
+}
+
+@media screen and (max-width:750) {
+  main {
+    padding: 0vh 15vw;
+  }
 }
 
 /* @media screen and (max-width:1020px) {
@@ -57,8 +64,7 @@ p {
   font-size: 20px;
   line-height: 30px;
   padding-bottom: 10px;
-  padding-top: 20px;
-  color: #333333;
+  color: white;
   max-width: 60vw;
 }
 
@@ -72,9 +78,10 @@ h1 {
 
 h2 {
   font-family: 'SRGSSR_Display';
-  font-size: 64px;
+  font-size: 48px;
   font-weight: 700;
   color: white;
+  padding-bottom: 10px;
 
 }
 
@@ -98,6 +105,10 @@ h3 {
     font-size: 78px;
   }
 
+  h2 {
+    font-size: 40px;
+  }
+
   h3 {
     font-size: 28px;
   }
@@ -106,13 +117,19 @@ h3 {
 
 @media screen and (max-width:780px) {
   p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
+    max-width: 80vw;
   }
 
   h1{
-    font-size: 64px;
+    font-size: 56px;
   }
+
+  h2 {
+    font-size: 36px;
+  }
+
   h3 {
     font-size: 24px;
   }
@@ -139,10 +156,16 @@ li {
 a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 500;
 }
 
+
+@media screen and (max-width:1020px) {
+  a {
+  font-size: 18px;
+  }
+}
 /* active page */
 .nav-on {
   color: var(--pink);
@@ -150,12 +173,12 @@ a {
 
 /* hover link */
 .nav-link {
-  transition: 0.3s;
+  transition: 0.2s ease-in-out;
 }
 
 .nav-link:hover {
   color: var(--pink);
-  font-size: 40px;
+  font-size: 28px;
 }
 
 /* layout nav */
@@ -176,7 +199,7 @@ a {
 
 /* logo nav */
 .nav-branding img {
-  width: 15vw;
+  width: 10vw;
 }
 
 /* burger icon */
@@ -240,13 +263,7 @@ a {
     left: 0;
   }
 
-  a {
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
-  }
-
+ 
   .nav-branding img {
     width: 25vw;
   }
@@ -259,11 +276,12 @@ a {
 
 /* buttons */
 button {
-  background-color: var(--gray);
+  background-color: transparent;
   padding: 1%;
   border: var(--withe) 1px solid;
+  border-radius: 90px;
   font-family: 'SRGSSR_Display';
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 400;
   box-shadow: 0px;
 }
@@ -276,11 +294,12 @@ button:hover {
   font-family: 'SRGSSR_Display';
   font-size: 24px;
   font-weight: 400;
-  color: black;
+  color: white;
 }
 
 #more svg {
   size: 50vh;
+  color: white;
 }
 
 /* article styles */
@@ -305,14 +324,19 @@ figure.persona{
 
 .swot figure{
   background-color: #FFFFFF;
-  max-width: 40vw;
+  max-width: auto;
   display: flex;
   justify-content: center;
   padding-bottom: 0px !important;
   margin-bottom: 5vh;
+  margin-right: 0 !important;
 }
 article.text-picture div img {
   max-width: 35vw;
+}
+
+article.text-picture div.swot img {
+  max-width: 60vw;
 }
 
 @media screen and (max-width:1020px) {
@@ -324,6 +348,10 @@ article.text-picture div img {
 @media screen and (max-width:750px) {
   article.text-picture div img {
     max-width: 86vw;
+  }
+
+  article.text-picture div.swot img {
+    max-width: 75vw;
   }
 }
 
@@ -380,6 +408,7 @@ video {
 .podcast-prev audio {
   width: 100%;
   height: auto +5%;
+  padding-top: 20px;
 }
 
 
@@ -393,19 +422,10 @@ figure.persona {
 /**--------**/
 /** Team page **/
 /**--------**/
-/* .text-container {
-
-  padding: 3vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  height: fit-content;
-} */
 
 img.portrait {
   width: 20vw;
   height: 20vw;
-  padding-bottom: 10px;
   object-fit: cover;
   align-self: center !important;
 }
@@ -434,6 +454,10 @@ img.portrait {
 article.team {
   padding-right: 5vw;
   width: 30vw;
+}
+
+div.team{
+  padding-bottom: 10vh;
 }
 
 @media screen and (max-width:1020px) {
