@@ -33,17 +33,105 @@ body {
   font-family: 'SRGSSR_Display';
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  padding: 0vh 10vw;
+  min-height: 75vh;
+}
 
-/**--------**/
+/* @media screen and (max-width:1020px) {
+  main {
+    padding: 0vh 8vw;
+  }
+} */
+
+img{
+  object-fit: contain;
+}
+
+/* Typography */
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  color: #333333;
+  max-width: 60vw;
+}
+
+h1 {
+  font-family: 'SRGSSR_Display';
+  font-size: 96px;
+  font-weight: 700;
+  color: white;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-family: 'SRGSSR_Display';
+  font-size: 64px;
+  font-weight: 700;
+  color: white;
+
+}
+
+h3 {
+  font-family: 'SRGSSR_Display';
+  font-size: 32px;
+  font-weight: 400;
+  color: white;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+
+@media screen and (max-width:1020px) {
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  h1{
+    font-size: 78px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+  
+}
+
+@media screen and (max-width:780px) {
+  p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  h1{
+    font-size: 64px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+}
+
+
+
+/**----------------------------------------------------------**/
 /** header **/
 /**--------**/
 
 /* desktop */
+/* background of header */
 header {
   background-color: var(--gray);
   margin-bottom: 5vh;
 }
 
+/* links in header */
 li {
   list-style: none;
 }
@@ -51,15 +139,26 @@ li {
 a {
   color: white;
   text-decoration: none;
-  font-size: 32px;
+  font-size: 18px;
   font-weight: 500;
 }
 
+/* active page */
 .nav-on {
   color: var(--pink);
-  text-decoration: underline;
 }
 
+/* hover link */
+.nav-link {
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--pink);
+  font-size: 40px;
+}
+
+/* layout nav */
 .navbar {
   min-height: 70px;
   display: flex;
@@ -75,27 +174,19 @@ a {
   gap: 60px;
 }
 
+/* logo nav */
 .nav-branding img {
   width: 15vw;
 }
 
-.nav-link {
-  transition: 0.3s;
-}
-
-.nav-link:hover {
-  color: var(--pink);
-  font-size: 40px;
-}
-
+/* burger icon */
 .hamburger {
   display: none;
   cursor: pointer;
 }
 
-
 /* mobile */
-/* Burger icon */
+/* burger icon */
 .bar {
   display: block;
   width: 25px;
@@ -108,9 +199,9 @@ a {
 
 @media screen and (max-width:750px) {
   header {
-    position: fixed;
     width: 100vw;
     z-index: 1;
+    display: block;
   }
 
   .hamburger {
@@ -162,36 +253,11 @@ a {
 }
 
 
-/**----------------**/
+/**-----------------------------------------------------**/
 /** desktop styles **/
 /**----------------**/
-p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-}
 
-h1 {
-  font-family: 'SRGSSR_Display';
-  font-size: 96px;
-  font-weight: 700;
-}
-
-h2 {
-  font-family: 'SRGSSR_Display';
-  font-size: 64px;
-  font-weight: 700;
-}
-
-h3 {
-  font-family: 'SRGSSR_Display';
-  font-size: 46px;
-  font-weight: 400;
-}
-
+/* buttons */
 button {
   background-color: var(--gray);
   padding: 1%;
@@ -206,17 +272,65 @@ button:hover {
   box-shadow: 0px 0px 15px var(--gray);
 }
 
-main {
-  display: flex;
-  justify-content: center;
-  padding: 0vh 10vw;
-  min-height: 75vh;
+#more a {
+  font-family: 'SRGSSR_Display';
+  font-size: 24px;
+  font-weight: 400;
+  color: black;
 }
 
+#more svg {
+  size: 50vh;
+}
+
+/* article styles */
 article {
   padding-bottom: 5vh;
 }
 
+article.text-picture div figure {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  padding-bottom: 5vh;
+}
+
+figure.persona{
+  padding-bottom: 0 !important;
+  margin-bottom: 5vh;xw
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.SWOT figure{
+  background-color: #FFFFFF;
+  max-width: 40vw;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0px !important;
+  margin-bottom: 5vh;
+}
+article.text-picture div img {
+  max-width: 35vw;
+}
+
+@media screen and (max-width:1020px) {
+  article.text-picture div img {
+    max-width: 60vw;
+  }
+}
+
+@media screen and (max-width:750px) {
+  article.text-picture div img {
+    max-width: 86vw;
+  }
+}
+
+/**--------**/
+/** home page **/
+/**--------**/
+/* video styles */
 video {
   max-width: 86vw;
 }
@@ -226,6 +340,7 @@ video {
   justify-content: center;
 }
 
+/* poster styles */
 #poster {
   display: flex;
   gap: 5vw;
@@ -233,19 +348,29 @@ video {
   padding-top: 5vh;
 }
 
+@media screen and (max-width:1020px) {
+  #poster {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  #poster img {
+    width: 70vw;
+  }
+}
+@media screen and (max-width:750px) {
+  #poster img {
+    min-width: 86vw !important;
+  }
+}
+
+
 #poster img {
   width: 50vw;
 }
 
-.text-container {
-  background-color: var(--withe);
-  padding: 3vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  height: fit-content;
-}
-
+/* podcast preview */
 .podcast-prev {
   display: flex;
   flex-direction: column;
@@ -257,69 +382,71 @@ video {
   height: auto +5%;
 }
 
+
+/**--------**/
+/** marketing page **/
+/**--------**/
+figure.persona {
+  background-color: white;
+}
+
+/**--------**/
+/** Team page **/
+/**--------**/
+/* .text-container {
+
+  padding: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: fit-content;
+} */
+
 img.portrait {
   width: 20vw;
   height: 20vw;
   padding-bottom: 10px;
   object-fit: cover;
+  align-self: center !important;
 }
 
-/* .team-container{
-  display: grid;
-  grid-template-columns: repeat(2, 30vw);
-  grid-template-rows: repeat(2, auto);
-  justify-content: center;
-  padding: 5vh 5vw;
+@media screen and (max-width:1020px) {
+  img.portrait {
+    width: 40vw;
+    height: 40vw;
+  }
 }
 
-article.team{
-  padding: 5px;
-} */
-
-article.text-picture div figure {
-  display: flex;
-  gap: 2vw;
-  padding-bottom: 5vh;
-}
-
-article.text-picture div img {
-  max-width: 35vw;
-}
-
-
-figure.persona {
-  background-color: white;
+@media screen and (max-width:750px) {
+  img.portrait {
+    width: 50vw;
+    height: 50vw;
+  }
 }
 
 .team-container {
   display: flex;
   justify-content: center;
   padding: 5vh 5vw;
+  flex-wrap: wrap;
 }
 
 article.team {
-  padding: 5px;
+  padding-right: 5vw;
+  width: 30vw;
 }
 
-#more a {
-  font-family: 'SRGSSR_Display';
-  font-size: 32px;
-  font-weight: 400;
-  color: black;
+@media screen and (max-width:1020px) {
+  .team-container {
+    display: flex;
+    justify-content: center;
+    margin: 5vh 5vw;
+  }
+
+  article.team {
+    width: auto;
+  }
 }
-
-#more svg {
-  size: 50vh;
-}
-
-
-
-/**---------------**/
-/** mobile styles **/
-/**---------------**/
-
-
-
 
 /**--------**/
 /** Footer **/
